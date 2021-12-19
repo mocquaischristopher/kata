@@ -1,4 +1,4 @@
-function min(num1, num2){
+export function min(num1, num2){
     let result;
     if(num1 > num2){
         return result = num2;

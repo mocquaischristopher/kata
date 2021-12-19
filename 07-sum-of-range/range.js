@@ -8,18 +8,6 @@ function range(first, last) {
 range(1, 10);
 
 
-function ranges(first, last) {
-    let array = [];
-    array.length = last;
-    console.log(array);
-    for (let i = 0; i < array.length; i++) {
-        array[i] = first++;
-        i++;
-    }
-    console.log(array);
-}
-ranges(1, 10);
-
 function ranged(start, end, step) {
     let array = [];
     if (step == undefined) {
@@ -34,7 +22,22 @@ function ranged(start, end, step) {
 }
 ranged(5, 2, -1);
 
-function (sum(range(first, last))) {
-    let arrayTotal = 0;
-    
+
+
+let array = [];
+
+function range(first, last) {
+    for (let i = 0; i < last; i++) {
+        array[i] = first++;
+    }
+    return array;
 }
+
+function sum(array) {
+    var total = 0;
+    for (let i in array) {
+        total = total + array[i];
+    }
+    return total;
+}
+sum(range(1, 10));

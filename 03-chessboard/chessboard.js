@@ -1,24 +1,16 @@
-let nb = 9;
+function chess(size) {
+  let array = '';
 
-function ligne(char1, char2){
-    let ligne = "";
-    let diez = char1;
-    let space = char2;
-
-    for (let i = 1;  i < nb; i++) {
-        if( i % 2 == 0) {
-            ligne += diez;
-        } else {
-            ligne += space;
-        }
-        
+  for (let i = 0; i < size; i++) {
+    for (let j = 0; j < size; j++) {
+      if ((j + i) % 2 == 0) {
+        array += ' ';
+      } else {
+        array += '#';
+      }
     }
-    console.log(ligne)
+    array += '\n';
+  }
+  return array;
 }
-for (let j = 1; j < nb; j++){
-    if( j % 2 == 0) {
-        ligne( " ", "#");
-    } else {
-        ligne( "#", " ");
-    }
-}
+chess(8);
