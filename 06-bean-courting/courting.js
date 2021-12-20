@@ -1,4 +1,4 @@
-function countBs(string) {
+export function countBs(string) {
     let count = 0;
     let char = ' ';
     for (let i = 0; i < string.length; i++) {
@@ -11,7 +11,7 @@ function countBs(string) {
 countBs("BaobaB");
 countBs('Simplon');
 
-function countChar(string, B) {
+export function countChar(string, B) {
     let count = 0;
     let char = ' ';
     for (let i = 0; i < string.length; i++) {

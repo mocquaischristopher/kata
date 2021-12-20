@@ -1,4 +1,4 @@
-function range(first, last) {
+export function range(first, last) {
     let array = [];
     for (let i = 0; i < last; i++) {
         array[i] = first++;
@@ -8,12 +8,12 @@ function range(first, last) {
 range(1, 10);
 
 
-function ranged(start, end, step) {
+export function ranged(start, end, step) {
     let array = [];
     if (step == undefined) {
         step = 1;
     }
-    numLoops = Math.abs((end - start) / step) + 1;
+    let numLoops = Math.abs((end - start) / step) + 1;
     for (let i = 0; i < numLoops; i++) {
         array.push(start);
         start += step;
@@ -24,16 +24,16 @@ ranged(5, 2, -1);
 
 
 
-let array = [];
+// let array = [];
 
-function range(first, last) {
-    for (let i = 0; i < last; i++) {
-        array[i] = first++;
-    }
-    return array;
-}
+// function range(first, last) {
+//     for (let i = 0; i < last; i++) {
+//         array[i] = first++;
+//     }
+//     return array;
+// }
 
-function sum(array) {
+export function sum(array) {
     var total = 0;
     for (let i in array) {
         total = total + array[i];
