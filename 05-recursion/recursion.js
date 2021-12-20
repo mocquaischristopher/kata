@@ -1,4 +1,4 @@
-function isEven(number) {
+export function isEven(number) {
     if (number < 0) {
         // number = Math.abs(number);
         number *= -1;

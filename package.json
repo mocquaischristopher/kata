@@ -5,14 +5,13 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "test": "mocha",
-    "coverage": "nyc npm run test"
+    "test": "npx c8 mocha 'test/**.js'"
   },
   "keywords": [],
   "author": "christopher_mocquais",
   "license": "ISC",
   "devDependencies": {
-    "chai": "^4.3.4",
-    "nyc": "^15.1.0"
+    "c8": "^7.10.0",
+    "chai": "^4.3.4"
   }
 }
